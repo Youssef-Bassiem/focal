@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    @keyframes slide-up {
+        0% {
+            transform: translateY(20%);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .animate-slide-up {
+        animation: slide-up 1s ease-out both;
+    }
+
+
+
+    @keyframes load {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+
+    .progress-bar::before {
+        @apply absolute h-1 opacity-100 left-0 w-20 rounded-sm bg-white;
+        content: '';
+        animation: load 2900ms;
+    }
+}
