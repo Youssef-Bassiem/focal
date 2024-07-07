@@ -30,7 +30,7 @@ const data = [
   },
   {
     firstImage: "/jump1-desktop.webp",
-    secondImage: "/jump2-desktop.jpg",
+    secondImage: "/jump2-desktop.webp",
     title: "charge anywhere, anytime",
     collection: "new Jump + PowerBank",
     firstButtonText: "shop jump +",
